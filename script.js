@@ -15,7 +15,7 @@
   const ONEVO_RELEASE_CONFIG = {
     appName: "ONEVO",
     tagline: "One profile. Endless connections.",
-    apkDownloadUrl: "https://github.com/sonusapien/ONEVO/releases/download/v1.0.0/release.apk",
+    apkDownloadUrl: "https://github.com/sonusapien/onevocontact/releases/download/v1.0.0/release.apk",
     apkFileName: "ONEVO.apk",
     version: "1.0.0",
     releaseDate: "Official Public Release 2026",
