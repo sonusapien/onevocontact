@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary SEO Metadata -->
+  <title>ONEVO — One profile. Endless connections. | Official Public Launch</title>
+  <meta name="description" content="ONEVO makes digital identity and contact sharing simpler, faster and more convenient on Android. Download the official direct APK release.">
+  <link rel="canonical" href="https://onevo.app/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://onevo.app/">
+  <meta property="og:title" content="ONEVO — One profile. Endless connections.">
+  <meta property="og:description" content="A simpler, faster way to share your profile and exchange contact information on Android.">
+  <meta property="og:image" content="https://onevo.app/assets/images/og-image.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://onevo.app/">
+  <meta name="twitter:title" content="ONEVO — One profile. Endless connections.">
+  <meta name="twitter:description" content="A simpler, faster way to share your profile and exchange contact information on Android.">
+  <meta name="twitter:image" content="https://onevo.app/assets/images/og-image.svg">
+
+  <!-- Favicon (Inline data-URI fallback + external icons) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='4' y1='44' x2='44' y2='4' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%236557FF'/%3E%3Cstop offset='100%25' stop-color='%23278BFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='12' fill='%23080D1D'/%3E%3Ccircle cx='24' cy='24' r='14' stroke='url(%23g)' stroke-width='3.5' stroke-linecap='round' stroke-dasharray='64 12' transform='rotate(-45 24 24)' fill='none'/%3E%3Ccircle cx='24' cy='10' r='3.2' fill='%23278BFF'/%3E%3Ccircle cx='24' cy='38' r='3.2' fill='%236557FF'/%3E%3Ccircle cx='24' cy='24' r='4.5' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <meta name="theme-color" content="#fffaf0">
+
+  <!-- Google Fonts (Unbounded + Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ONEVO",
+    "operatingSystem": "Android",
+    "applicationCategory": "CommunicationApplication",
+    "description": "ONEVO makes digital identity and contact sharing simpler, faster and more convenient on Android.",
+    "downloadUrl": "https://onevo.app/apk/release.apk",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVBAR (STICKY BLURRED RIBBON)
+       ====================================================================== -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo display-font" aria-label="ONEVO Home">
+        <svg class="nav-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="nav-logo-grad" x1="4" y1="44" x2="44" y2="4" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6557FF" />
+              <stop offset="100%" stop-color="#278BFF" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="12" fill="#080D1D"/>
+          <circle cx="24" cy="24" r="14" stroke="url(#nav-logo-grad)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="64 12" transform="rotate(-45 24 24)"/>
+          <circle cx="24" cy="10" r="3.2" fill="#278BFF"/>
+          <circle cx="24" cy="38" r="3.2" fill="#6557FF"/>
+          <circle cx="24" cy="24" r="4.5" fill="#FFFFFF"/>
+        </svg>
+        <span>ONEVO</span>
+      </a>
+
+      <ul class="nav-center-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+        <li><a href="#privacy" class="nav-link">Privacy</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-right-actions">
+        <a href="/apk/release.apk" download="ONEVO.apk" class="btn btn-primary ripple btn-download" data-download-apk>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download</span>
+        </a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#how-it-works" class="nav-link">How it works</a>
+    <a href="#privacy" class="nav-link">Privacy</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="/apk/release.apk" download="ONEVO.apk" class="btn btn-primary ripple btn-download" data-download-apk>
+      <span>Download ONEVO APK</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         HERO SECTION (ROTATING AMBIENT AURA & FLOATING EMBLEM)
+         ==================================================================== -->
+    <header class="hero container">
+      <svg class="hero-logo-svg reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-label="ONEVO Emblem" role="img">
+        <defs>
+          <linearGradient id="hero-logo-grad" x1="4" y1="44" x2="44" y2="4" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6557FF" />
+            <stop offset="100%" stop-color="#278BFF" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="13" fill="#080D1D" stroke="rgba(255,255,255,0.14)" stroke-width="1.2"/>
+        <circle cx="24" cy="24" r="14" stroke="url(#hero-logo-grad)" stroke-width="3.8" stroke-linecap="round" stroke-dasharray="64 12" transform="rotate(-45 24 24)"/>
+        <circle cx="24" cy="10" r="3.4" fill="#278BFF"/>
+        <circle cx="24" cy="38" r="3.4" fill="#6557FF"/>
+        <circle cx="24" cy="24" r="4.8" fill="#FFFFFF"/>
+      </svg>
+
+      <h1 class="display-xl reveal">
+        One profile.<br>
+        <span class="display-lg">Endless connections.</span>
+      </h1>
+
+      <p class="hero-sub body-md reveal">
+        Your identity deserves a smarter way to connect. Meet ONEVO — a simpler way to share your profile and exchange contact information.
+      </p>
+
+      <div class="hero-ctas reveal">
+        <!-- Critical Primary Download CTA -->
+        <a href="/apk/release.apk" download="ONEVO.apk" class="btn btn-primary btn-large ripple btn-download" data-download-apk>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download ONEVO</span>
+        </a>
+
+        <a href="#features" class="btn btn-secondary btn-large ripple">
+          <span>Explore ONEVO</span>
+        </a>
+      </div>
+
+      <p class="hero-apk-note reveal">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span>Android APK download. You may need to allow installation from this source.</span>
+      </p>
+    </header>
+
+    <!-- ====================================================================
+         TICKER SECTION (METRIC & VALUE RIBBON)
+         ==================================================================== -->
+    <section class="ticker">
+      <div class="ticker-inner">
+        <div class="ticker-item reveal">⭐ Direct Official APK</div>
+        <div class="ticker-item reveal">⚡ Proximity NameLink</div>
+        <div class="ticker-item reveal">🔒 Total Privacy Control</div>
+        <div class="ticker-item reveal">🤝 Zero-Friction QR &amp; Nearby</div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SCREENSHOTS MARQUEE SECTION (INFINITE ROTATING PHONES)
+         ==================================================================== -->
+    <section class="screenshots">
+      <div class="container screenshots-header reveal">
+        <p class="screenshots-label caption-uppercase">SEE IT IN ACTION</p>
+        <h2 class="screenshots-title display-md">Built for the way you connect</h2>
+      </div>
+
+      <div class="scroll-strip-wrapper">
+        <!-- Marquee Group 1 -->
+        <div class="marquee-group">
+          <!-- Mockup 1: Profile -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div class="screen-profile-card">
+                  <div class="screen-avatar">AR</div>
+                  <div class="screen-name">Alex Rivera</div>
+                  <div class="screen-role">Product Designer</div>
+                  <div class="screen-chip-row">
+                    <span class="screen-chip">@alex.onevo</span>
+                    <span class="screen-chip">Active</span>
+                  </div>
+                </div>
+                <div style="background:#17223A; border-radius:10px; padding:8px; font-size:10px; color:#AAB4C8;">
+                  📱 +1 (555) 019-2834
+                </div>
+                <div style="background:#17223A; border-radius:10px; padding:8px; font-size:10px; color:#AAB4C8;">
+                  ✉️ alex@rivera.design
+                </div>
+                <div style="background:#6557FF; border-radius:8px; padding:8px; text-align:center; font-size:10px; font-weight:700;">
+                  Share Profile
+                </div>
+              </div>
+            </div>
+            <p class="caption">Digital Profile</p>
+          </div>
+
+          <!-- Mockup 2: QR Sharing -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div class="screen-qr-wrap">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="6" fill="#FFFFFF"/>
+                    <path d="M10 10h30v30H10V10zm6 6v18h18V16H16z" fill="#080D1D"/>
+                    <rect x="20" y="20" width="10" height="10" fill="#080D1D"/>
+                    <path d="M60 10h30v30H60V10zm6 6v18h18V16H66z" fill="#080D1D"/>
+                    <rect x="70" y="20" width="10" height="10" fill="#080D1D"/>
+                    <path d="M10 60h30v30H10V60zm6 6v18h18V66H16z" fill="#080D1D"/>
+                    <rect x="20" y="70" width="10" height="10" fill="#080D1D"/>
+                    <rect x="48" y="10" width="6" height="30" fill="#080D1D"/>
+                    <rect x="60" y="48" width="30" height="6" fill="#080D1D"/>
+                    <rect x="48" y="48" width="12" height="12" fill="#6557FF"/>
+                    <rect x="66" y="66" width="24" height="24" fill="#278BFF"/>
+                  </svg>
+                  <p style="font-size: 11px; font-weight:700; color: #080D1D; margin-top:8px;">Scan to Connect</p>
+                </div>
+              </div>
+            </div>
+            <p class="caption">Instant QR Scan</p>
+          </div>
+
+          <!-- Mockup 3: Nearby Discovery -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">ONEVO Nearby</div>
+                <div class="screen-nearby-wrap">
+                  <div class="screen-radar-circle" style="width: 140px; height: 140px;"></div>
+                  <div class="screen-radar-circle" style="width: 80px; height: 80px;"></div>
+                  <div class="screen-peer-dot" style="top: 20px; left: 30px;">SK</div>
+                  <div class="screen-peer-dot" style="bottom: 30px; right: 25px; background: #278BFF;">MT</div>
+                  <div style="width: 40px; height: 40px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color:#080D1D;">YOU</div>
+                </div>
+                <div style="font-size:10px; color:#10B981; text-align:center;">2 Peers in Range</div>
+              </div>
+            </div>
+            <p class="caption">Nearby Discovery</p>
+          </div>
+
+          <!-- Mockup 4: NameLink -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">NameLink Proximity</div>
+                <div class="screen-namelink-wrap">
+                  <div style="display:flex; gap:12px; align-items:center;">
+                    <div class="screen-avatar" style="margin:0;">AR</div>
+                    <div style="font-size:16px;">⚡</div>
+                    <div class="screen-avatar" style="margin:0; background:#278BFF;">SK</div>
+                  </div>
+                  <div class="screen-beam"></div>
+                  <span style="font-size:10px; background:#10B981; padding:4px 10px; border-radius:12px; font-weight:700;">Connected</span>
+                </div>
+              </div>
+            </div>
+            <p class="caption">NameLink Feature</p>
+          </div>
+
+          <!-- Mockup 5: Privacy -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">Privacy Controls</div>
+                <div class="screen-switch-row"><span>Share Mobile Phone</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Share Work Email</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Allow Nearby</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Require Approval</span><div class="screen-toggle"></div></div>
+              </div>
+            </div>
+            <p class="caption">Privacy Controls</p>
+          </div>
+
+          <!-- Mockup 6: Contacts -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">Saved Connections</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Sarah Kim • Founder</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Marcus Thorne • Engineer</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Elena Rostova • Design</div>
+                <div style="background:#278BFF; border-radius:6px; padding:6px; text-align:center; font-size:10px; font-weight:700; margin-top:auto;">Export to Contacts</div>
+              </div>
+            </div>
+            <p class="caption">Contacts Library</p>
+          </div>
+        </div>
+
+        <!-- Marquee Group 2 (Clone for seamless loop) -->
+        <div class="marquee-group" aria-hidden="true">
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div class="screen-profile-card">
+                  <div class="screen-avatar">AR</div>
+                  <div class="screen-name">Alex Rivera</div>
+                  <div class="screen-role">Product Designer</div>
+                  <div class="screen-chip-row"><span class="screen-chip">@alex.onevo</span><span class="screen-chip">Active</span></div>
+                </div>
+                <div style="background:#17223A; border-radius:10px; padding:8px; font-size:10px; color:#AAB4C8;">📱 +1 (555) 019-2834</div>
+                <div style="background:#17223A; border-radius:10px; padding:8px; font-size:10px; color:#AAB4C8;">✉️ alex@rivera.design</div>
+                <div style="background:#6557FF; border-radius:8px; padding:8px; text-align:center; font-size:10px; font-weight:700;">Share Profile</div>
+              </div>
+            </div>
+            <p class="caption">Digital Profile</p>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div class="screen-qr-wrap">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="6" fill="#FFFFFF"/>
+                    <path d="M10 10h30v30H10V10zm6 6v18h18V16H16z" fill="#080D1D"/>
+                    <rect x="20" y="20" width="10" height="10" fill="#080D1D"/>
+                    <path d="M60 10h30v30H60V10zm6 6v18h18V16H66z" fill="#080D1D"/>
+                    <rect x="70" y="20" width="10" height="10" fill="#080D1D"/>
+                    <path d="M10 60h30v30H10V60zm6 6v18h18V66H16z" fill="#080D1D"/>
+                    <rect x="20" y="70" width="10" height="10" fill="#080D1D"/>
+                    <rect x="48" y="10" width="6" height="30" fill="#080D1D"/>
+                    <rect x="60" y="48" width="30" height="6" fill="#080D1D"/>
+                    <rect x="48" y="48" width="12" height="12" fill="#6557FF"/>
+                    <rect x="66" y="66" width="24" height="24" fill="#278BFF"/>
+                  </svg>
+                  <p style="font-size: 11px; font-weight:700; color: #080D1D; margin-top:8px;">Scan to Connect</p>
+                </div>
+              </div>
+            </div>
+            <p class="caption">Instant QR Scan</p>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">ONEVO Nearby</div>
+                <div class="screen-nearby-wrap">
+                  <div class="screen-radar-circle" style="width: 140px; height: 140px;"></div>
+                  <div class="screen-radar-circle" style="width: 80px; height: 80px;"></div>
+                  <div class="screen-peer-dot" style="top: 20px; left: 30px;">SK</div>
+                  <div class="screen-peer-dot" style="bottom: 30px; right: 25px; background: #278BFF;">MT</div>
+                  <div style="width: 40px; height: 40px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color:#080D1D;">YOU</div>
+                </div>
+                <div style="font-size:10px; color:#10B981; text-align:center;">2 Peers in Range</div>
+              </div>
+            </div>
+            <p class="caption">Nearby Discovery</p>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">NameLink Proximity</div>
+                <div class="screen-namelink-wrap">
+                  <div style="display:flex; gap:12px; align-items:center;">
+                    <div class="screen-avatar" style="margin:0;">AR</div>
+                    <div style="font-size:16px;">⚡</div>
+                    <div class="screen-avatar" style="margin:0; background:#278BFF;">SK</div>
+                  </div>
+                  <div class="screen-beam"></div>
+                  <span style="font-size:10px; background:#10B981; padding:4px 10px; border-radius:12px; font-weight:700;">Connected</span>
+                </div>
+              </div>
+            </div>
+            <p class="caption">NameLink Feature</p>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">Privacy Controls</div>
+                <div class="screen-switch-row"><span>Share Mobile Phone</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Share Work Email</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Allow Nearby</span><div class="screen-toggle"></div></div>
+                <div class="screen-switch-row"><span>Require Approval</span><div class="screen-toggle"></div></div>
+              </div>
+            </div>
+            <p class="caption">Privacy Controls</p>
+          </div>
+
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup">
+              <div class="phone-bar"><span>09:41</span><div class="phone-punch"></div><span>5G</span></div>
+              <div class="phone-screen-body">
+                <div style="font-size:11px; font-weight:700; color:#fff;">Saved Connections</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Sarah Kim • Founder</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Marcus Thorne • Engineer</div>
+                <div style="background:#17223A; border-radius:8px; padding:6px 10px; font-size:10px;">Elena Rostova • Design</div>
+                <div style="background:#278BFF; border-radius:6px; padding:6px; text-align:center; font-size:10px; font-weight:700; margin-top:auto;">Export to Contacts</div>
+              </div>
+            </div>
+            <p class="caption">Contacts Library</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FEATURES BENTO GRID (POP-PASTEL TACTILE CARDS)
+         ==================================================================== -->
+    <section class="features container" id="features">
+      <div class="features-header reveal">
+        <p class="caption-uppercase" style="margin-bottom: var(--space-sm);">WHY ONEVO</p>
+        <h2 class="display-md" style="margin-bottom: var(--space-sm);">Everything you need, nothing you don't</h2>
+        <p class="body-md" style="color: var(--muted); max-width: 580px; margin: 0 auto;">
+          The modern digital identity and contact-sharing experience, designed without friction or clutter.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Bento 1: Digital Identity (Feature A) -->
+        <div class="feature-card feature-card-1 col-span-2 flex-row reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Your identity, all in one place.</h3>
+            <p class="body-sm feature-body">
+              Create and manage your ONEVO profile with complete freedom. Organize the phone numbers, emails, handles, and links you choose to share.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 2: QR Sharing (Feature B) -->
+        <div class="feature-card feature-card-2 reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+            <path d="M7 7h.01"></path><path d="M17 7h.01"></path><path d="M7 17h.01"></path><path d="M17 17h.01"></path>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">One scan. A new connection.</h3>
+            <p class="body-sm feature-body">
+              Instant scannable QR profile links. Standard camera apps open clean vCard cards; ONEVO app users unlock direct mutual save.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 3: ONEVO Nearby (Feature C) -->
+        <div class="feature-card feature-card-3 reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Share contacts. Instantly.</h3>
+            <p class="body-sm feature-body">
+              Fast local contact discovery between active ONEVO devices. Built specifically for verified cards, not arbitrary file transfers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 4: Granular Privacy -->
+        <div class="feature-card feature-card-4 reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Granular Field Control</h3>
+            <p class="body-sm feature-body">
+              Choose exactly which phone number, email address, or social handle is attached to every exchange.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 5: Review Before Sending -->
+        <div class="feature-card feature-card-5 reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Review Before Sending</h3>
+            <p class="body-sm feature-body">
+              Inspect the exact contact details being transmitted before any connection initiates. Zero silent data leakage.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 6: Explicit Approvals -->
+        <div class="feature-card feature-card-6 reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Explicit Approvals</h3>
+            <p class="body-sm feature-body">
+              No unsolicited contact pushes. You explicitly approve or decline incoming cards before anything is saved.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bento 7: ONEVO NameLink (Feature D - Signature Innovation) -->
+        <div class="feature-card feature-card-7 col-span-2 reveal">
+          <div class="nl-card-header">
+            <div class="nl-card-title-group">
+              <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+                <circle cx="5" cy="12" r="3"></circle>
+                <circle cx="19" cy="12" r="3"></circle>
+              </svg>
+              <h3 class="title-md">Bring phones close. Make connections.</h3>
+            </div>
+            <button id="nl-sim-trigger" class="btn btn-secondary btn-sm" type="button">
+              <span>Simulate</span>
+            </button>
+          </div>
+
+          <p class="body-sm feature-body">
+            Experience ONEVO NameLink, the proximity-inspired contact-sharing feature. Hold two compatible devices together to initiate an instant profile exchange.
+          </p>
+
+          <!-- Interactive NameLink Demonstration Stage -->
+          <div class="namelink-mini-stage">
+            <div class="nl-mini-phone left">
+              <span style="font-size:8px; font-weight:700;">ONEVO</span>
+              <div style="width:24px; height:24px; border-radius:50%; background:#6557FF; margin:6px auto; font-size:9px; font-weight:700; display:flex; align-items:center; justify-content:center;">AR</div>
+              <span style="font-size:7px; color:#AAB4C8;">Alex R.</span>
+            </div>
+
+            <div class="nl-mini-waves" aria-hidden="true">
+              <div class="nl-wave-ring"></div>
+            </div>
+
+            <div class="namelink-mini-badge">
+              Connected • Contact Saved
+            </div>
+
+            <div class="nl-mini-phone right">
+              <span style="font-size:8px; font-weight:700;">ONEVO</span>
+              <div style="width:24px; height:24px; border-radius:50%; background:#278BFF; margin:6px auto; font-size:9px; font-weight:700; display:flex; align-items:center; justify-content:center;">SK</div>
+              <span style="font-size:7px; color:#AAB4C8;">Sarah K.</span>
+            </div>
+          </div>
+
+          <p class="caption" style="margin-top: 6px;">
+            Note: Proximity detection requires supported device hardware. Manual ONEVO Nearby is available across all compatible Android phones.
+          </p>
+        </div>
+
+        <!-- Bento 8: Direct Official APK Distribution -->
+        <div class="feature-card feature-card-8 col-span-3 flex-row reveal">
+          <svg class="feature-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+          <div class="feature-content">
+            <h3 class="title-md">Direct Official Distribution</h3>
+            <p class="body-sm feature-body">
+              ONEVO is distributed directly as an authentic Android APK. No third-party account walls or app store delays. Direct, transparent, and verified.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HOW IT WORKS (3-STEP TACTILE CARDS)
+         ==================================================================== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="how-it-works-header reveal">
+          <p class="caption-uppercase" style="margin-bottom: var(--space-sm);">SIMPLICITY FIRST</p>
+          <h2 class="display-md">Three steps to effortless connections</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-box reveal">
+            <div class="step-digit">01</div>
+            <h3 class="title-md">Create your profile.</h3>
+            <p class="body-sm">
+              Set up your unified digital profile in seconds. Choose which contact channels, handles, and phone numbers are visible.
+            </p>
+          </div>
+
+          <div class="step-box reveal">
+            <div class="step-digit">02</div>
+            <h3 class="title-md">Choose how to share.</h3>
+            <p class="body-sm">
+              Present your on-screen QR code, discover peers via ONEVO Nearby, or bring devices close with ONEVO NameLink.
+            </p>
+          </div>
+
+          <div class="step-box reveal">
+            <div class="step-digit">03</div>
+            <h3 class="title-md">Make new connections.</h3>
+            <p class="body-sm">
+              The recipient reviews your card and saves it directly to their device address book or ONEVO directory with a single tap.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PRIVACY AND USER CONTROL SECTION
+         ==================================================================== -->
+    <section class="privacy container" id="privacy">
+      <div class="features-header reveal">
+        <p class="caption-uppercase" style="margin-bottom: var(--space-sm);">PRIVACY &amp; CONTROL</p>
+        <h2 class="display-md">Your information. Your choice.</h2>
+        <p class="body-md" style="color: var(--muted); max-width: 540px; margin: 0 auto;">
+          Contact sharing should always be deliberate. ONEVO provides verified privacy safeguards without exaggerated claims.
+        </p>
+      </div>
+
+      <div class="privacy-grid">
+        <div class="privacy-pill-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div>
+            <h3 class="title-sm" style="margin-bottom: 6px;">Choose which information to share</h3>
+            <p class="body-sm">You decide exactly which phone numbers, email addresses, or social handles are visible for every share.</p>
+          </div>
+        </div>
+
+        <div class="privacy-pill-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <div>
+            <h3 class="title-sm" style="margin-bottom: 6px;">Review contact details before sending</h3>
+            <p class="body-sm">Inspect the exact contact card being transmitted before initiating any exchange.</p>
+          </div>
+        </div>
+
+        <div class="privacy-pill-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <div>
+            <h3 class="title-sm" style="margin-bottom: 6px;">Approve incoming contact exchanges</h3>
+            <p class="body-sm">No unsolicited data pushes. You explicitly accept incoming cards before any connection is stored.</p>
+          </div>
+        </div>
+
+        <div class="privacy-pill-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline></svg>
+          <div>
+            <h3 class="title-sm" style="margin-bottom: 6px;">Control where received contacts are saved</h3>
+            <p class="body-sm">Keep connections inside ONEVO or export them directly to your native Android Contacts address book.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         DOWNLOAD CLOSING SECTION (TACTILE CTA & VERIFIED CARD)
+         ==================================================================== -->
+    <section class="download-section" id="download">
+      <div class="container download-wrap">
+        <h2 class="display-md reveal">Ready to connect differently?</h2>
+        <p class="body-md reveal">Get ONEVO on your Android device and experience a simpler way to share your identity.</p>
+
+        <!-- Primary Download Button -->
+        <a href="/apk/release.apk" download="ONEVO.apk" class="btn btn-primary btn-large ripple btn-download reveal" data-download-apk>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download ONEVO for Android</span>
+        </a>
+
+        <p class="caption reveal" style="margin-top: 14px;">
+          Android APK download. You may need to allow installation from this source.
+        </p>
+
+        <!-- Release Metadata Card -->
+        <div class="release-metadata-pill reveal">
+          <div class="meta-col">
+            <span class="meta-label">Version</span>
+            <span id="meta-app-version" class="meta-val">v1.0.0</span>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Platform</span>
+            <span class="meta-val">Android</span>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Compatibility</span>
+            <span id="meta-compatibility" class="meta-val">Android 8.0+</span>
+          </div>
+          <div id="meta-filesize-col" class="meta-col" style="display: none;">
+            <span class="meta-label">Package Size</span>
+            <span id="meta-file-size" class="meta-val">--</span>
+          </div>
+          <div class="meta-col">
+            <span class="meta-label">Package</span>
+            <span class="meta-val verified">
+              <svg style="width:14px; height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Verified APK</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FAQ ACCORDION SECTION (10 REQUIRED QUESTIONS - ECHO MUSIC STYLE)
+         ==================================================================== -->
+    <section class="faq" id="faq">
+      <div class="faq-header reveal">
+        <p class="caption-uppercase" style="margin-bottom: var(--space-sm);">QUESTIONS</p>
+        <h2 class="display-md">Straight answers</h2>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">What is ONEVO?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">ONEVO is a modern Android application designed to make digital identity and contact sharing simpler, faster, and more convenient. It lets you create a unified digital profile, share it via QR codes, and connect with peers through nearby sharing and proximity interactions.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">How does ONEVO work?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">After installing ONEVO, you set up your profile with the contact methods you wish to make available (such as phone numbers, emails, and social handles). You can then share your profile instantly using a dynamic QR code, broadcast via ONEVO Nearby, or initiate a proximity-based connection.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">How do I share my ONEVO profile?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">You can share your profile in three ways: by displaying your personal ONEVO QR code for the other person to scan with their camera, by initiating an exchange with users discovered in ONEVO Nearby, or by holding compatible phones together with ONEVO NameLink.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">Can someone scan my QR code without ONEVO?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">Yes. When someone scans your ONEVO QR code using a standard smartphone camera or QR scanner, it opens your compatible contact card (standard vCard/web profile) so they can save your details directly into their device's address book without needing the app installed. Fellow ONEVO users unlock a direct mutual save inside the app.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">What is ONEVO Nearby?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">ONEVO Nearby is a local contact discovery feature that lets you find other ONEVO users in your immediate surroundings (for example, in a meeting room or networking hall) and exchange profile cards directly upon mutual approval. It is built specifically for contact cards and does not perform arbitrary file transfers.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">What is ONEVO NameLink?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">ONEVO NameLink is our signature proximity-inspired contact-sharing feature. By bringing two supported Android phones close together, NameLink detects the nearby interaction and initiates a seamless, elegant profile exchange with visual confirmation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">Does NameLink work on every Android phone?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">Automatic proximity detection requires compatible device hardware and sensors. On devices without dedicated proximity hardware, manual ONEVO Nearby and QR sharing provide dependable, zero-friction alternatives available across all compatible Android phones.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">How do I install the APK?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">Download the APK using the "Download ONEVO" button. Once downloaded, tap the notification or open your Downloads folder to run the APK. If prompted by Android, grant permission to allow installation from your browser. Follow the on-screen prompts to complete the installation.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">How do I update ONEVO?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">Whenever a new release is published, download the updated APK directly from this official website and install it. Android will update the existing ONEVO application seamlessly while preserving your profile and saved contacts.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3 class="title-sm">Where can I contact ONEVO support?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p class="body-md">You can reach the official ONEVO support team via email at <a href="mailto:support@onevo.app" style="color:var(--ink); text-decoration:underline;">support@onevo.app</a>. Our team is available to assist with inquiries, bug reports, and feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (ECHO MUSIC EDITORIAL 2-COLUMN PATTERN)
+       ====================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-left">
+          <div class="footer-logo display-font">
+            <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="footer-logo-grad" x1="4" y1="44" x2="44" y2="4" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#6557FF" />
+                  <stop offset="100%" stop-color="#278BFF" />
+                </linearGradient>
+              </defs>
+              <rect width="48" height="48" rx="12" fill="#080D1D"/>
+              <circle cx="24" cy="24" r="14" stroke="url(#footer-logo-grad)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="64 12" transform="rotate(-45 24 24)"/>
+              <circle cx="24" cy="10" r="3.2" fill="#278BFF"/>
+              <circle cx="24" cy="38" r="3.2" fill="#6557FF"/>
+              <circle cx="24" cy="24" r="4.5" fill="#FFFFFF"/>
+            </svg>
+            <span>ONEVO</span>
+          </div>
+          <div class="footer-disclaimer caption">
+            "One profile. Endless connections." ONEVO is an independent modern digital identity and contact-sharing application for Android.
+          </div>
+        </div>
+
+        <div class="footer-col-right">
+          <div class="footer-column">
+            <div class="footer-column-title display-font">Navigation</div>
+            <a href="#features" class="footer-link">Features</a>
+            <a href="#how-it-works" class="footer-link">How it works</a>
+            <a href="#privacy" class="footer-link">Privacy</a>
+            <a href="#faq" class="footer-link">FAQ</a>
+          </div>
+
+          <div class="footer-column">
+            <div class="footer-column-title display-font">Download</div>
+            <a href="/apk/release.apk" download="ONEVO.apk" class="footer-link btn-download" data-download-apk>Download APK</a>
+            <a href="#" class="footer-link" data-open-modal="modal-install-guide">Install Guide</a>
+            <a href="#download" class="footer-link">Release Notes</a>
+          </div>
+
+          <div class="footer-column">
+            <div class="footer-column-title display-font">Legal &amp; Help</div>
+            <a href="#" class="footer-link" data-open-modal="modal-privacy">Privacy Policy</a>
+            <a href="#" class="footer-link" data-open-modal="modal-terms">Terms of Use</a>
+            <a href="mailto:support@onevo.app" class="footer-link">Contact Support</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        <div>&copy; <span id="current-year">2026</span> ONEVO. All rights reserved.</div>
+        <div>Android is a trademark of Google LLC. ONEVO is independently developed and distributed directly.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       FLOATING HELP / QUICK ACCESS BUTTON (ECHO MUSIC STYLE FAB)
+       ====================================================================== -->
+  <div class="support-fab" id="support-fab">
+    <div class="support-msg-bubble">Need help installing?</div>
+    <button class="support-btn" aria-label="Open Installation Guide" data-open-modal="modal-install-guide" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DIALOGS (PRIVACY, INSTALL GUIDE, TERMS)
+       ====================================================================== -->
+  <!-- Privacy Modal -->
+  <div id="modal-privacy" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-privacy-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close dialog" type="button">&times;</button>
+      <h3 id="modal-privacy-title" class="modal-title display-font title-md">ONEVO Privacy Policy</h3>
+      <div class="modal-body">
+        <p><strong>Effective Date:</strong> Official Public Launch 2026</p>
+        <p>At ONEVO, your digital identity belongs to you. We design our contact-sharing tools to give you clear, transparent control over what information you choose to make available.</p>
+        <h4>1. Information You Choose to Share</h4>
+        <p>ONEVO only transmits contact fields (such as phone numbers, email addresses, or profile handles) that you explicitly enable. You can inspect your active card before initiating any exchange.</p>
+        <h4>2. Local Discovery &amp; Exchange</h4>
+        <p>Nearby discovery and NameLink interactions require explicit confirmation on your device before contact information is transferred or stored. No unsolicited contact cards are pushed to your device without approval.</p>
+        <h4>3. Device Storage &amp; Address Book</h4>
+        <p>Contacts received through ONEVO can be managed within the app or exported directly to your native Android Contacts provider at your discretion.</p>
+        <h4>4. Contact Support</h4>
+        <p>If you have questions regarding this privacy policy or your profile data, contact us at <a href="mailto:support@onevo.app">support@onevo.app</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Installation Guide Modal -->
+  <div id="modal-install-guide" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-install-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close dialog" type="button">&times;</button>
+      <h3 id="modal-install-title" class="modal-title display-font title-md">How to Install ONEVO on Android</h3>
+      <div class="modal-body">
+        <p>Follow these quick steps to install the official ONEVO APK:</p>
+        <h4>Step 1: Download the APK</h4>
+        <p>Click any "Download ONEVO" button on this website to save <code>ONEVO.apk</code> to your device.</p>
+        <h4>Step 2: Allow Installation from this Source</h4>
+        <p>When you open the downloaded file, Android may display a prompt asking for permission to install unknown apps from your browser. Tap <strong>Settings</strong> and toggle on <strong>"Allow from this source"</strong>.</p>
+        <h4>Step 3: Confirm Installation</h4>
+        <p>Return to the installer and tap <strong>Install</strong>. Once completed, tap <strong>Open</strong> to launch ONEVO and set up your digital profile.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div id="modal-terms" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-terms-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close dialog" type="button">&times;</button>
+      <h3 id="modal-terms-title" class="modal-title display-font title-md">Terms of Use</h3>
+      <div class="modal-body">
+        <p>By downloading or using ONEVO, you agree to these terms:</p>
+        <h4>1. Permitted Use</h4>
+        <p>ONEVO is provided for personal and professional digital profile and contact sharing. You agree not to use the service for spamming, harassment, or unauthorized collection of third-party contact data.</p>
+        <h4>2. Direct APK Distribution</h4>
+        <p>ONEVO is distributed directly by its official development team. Ensure you only download APK packages from official ONEVO domains.</p>
+        <h4>3. Software Updates</h4>
+        <p>Features, proximity detection performance, and capabilities may vary based on your Android device hardware and system version.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

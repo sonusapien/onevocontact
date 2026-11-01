@@ -1,0 +1,21 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/apk/*"
+  to = "/public/apk/:splat"
+  status = 200
+
+[[headers]]
+  for = "/public/apk/*.apk"
+  [headers.values]
+    Content-Type = "application/vnd.android.package-archive"
+    Content-Disposition = "attachment; filename=\"ONEVO.apk\""
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/apk/*.apk"
+  [headers.values]
+    Content-Type = "application/vnd.android.package-archive"
+    Content-Disposition = "attachment; filename=\"ONEVO.apk\""
+    Cache-Control = "no-cache"
