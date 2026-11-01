@@ -18,22 +18,19 @@ The website is 100% self-contained and pre-configured for GitHub Pages, Netlify,
   An empty `.nojekyll` file is present in the repository root. This tells GitHub Pages to disable Jekyll processing, ensuring all folders (including `assets/` and `public/apk/`) are published without being filtered or ignored.
 - **Data URI Favicon Fallback:**
   The `<head>` includes an inline data-URI vector favicon, guaranteeing that your browser tab icon displays instantly on any domain or subpath.
-- **Smart APK Path Resolution:**
-  Download buttons dynamically adapt whether hosted on GitHub Pages (`https://username.github.io/repo-name/public/apk/release.apk`) or a root domain / Netlify (`/apk/release.apk`).
+- **Official GitHub Releases Distribution:**
+  Download buttons are configured with the official direct download URL from GitHub Releases (`https://github.com/sonusapien/ONEVO/releases/download/v1.0.0/release.apk`), eliminating the need to host large binaries directly in static web repo trees.
 
 ---
 
-## 2. Placing the Release APK
+## 2. Official Release APK
 
-The website provides direct download CTAs in the Header, Hero, Download Section, and Mobile Drawer.
+The website provides direct download CTAs in the Header, Hero, Download Section, Mobile Drawer, and Footer.
 
-### Steps to Deploy the APK:
-1. Place your compiled and signed Android release package at:
-   ```bash
-   public/apk/release.apk
-   ```
-2. Ensure the filename is named exactly `release.apk`.
-3. When deployed to GitHub Pages or Netlify, requests will immediately download the APK package.
+All download buttons point to the official GitHub Release asset:
+```
+https://github.com/sonusapien/ONEVO/releases/download/v1.0.0/release.apk
+```
 
 ---
 
@@ -45,13 +42,13 @@ All release metadata is centralized in `script.js` inside the `ONEVO_RELEASE_CON
 const ONEVO_RELEASE_CONFIG = {
   appName: "ONEVO",
   tagline: "One profile. Endless connections.",
-  apkDownloadUrl: "/apk/release.apk",
+  apkDownloadUrl: "https://github.com/sonusapien/ONEVO/releases/download/v1.0.0/release.apk",
   apkFileName: "ONEVO.apk",
   version: "1.0.0",
   releaseDate: "Official Public Release 2026",
   fileSize: null, // Set to string e.g. "18.4 MB" only when verified; otherwise hidden
   compatibility: "Android 8.0 (API 26) or newer",
-  distributionNotice: "Official release distributed directly by ONEVO."
+  distributionNotice: "Official release distributed directly by ONEVO via GitHub Releases."
 };
 ```
 

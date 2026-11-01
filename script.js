@@ -15,29 +15,20 @@
   const ONEVO_RELEASE_CONFIG = {
     appName: "ONEVO",
     tagline: "One profile. Endless connections.",
-    apkDownloadUrl: "/apk/release.apk",
+    apkDownloadUrl: "https://github.com/sonusapien/ONEVO/releases/download/v1.0.0/release.apk",
     apkFileName: "ONEVO.apk",
     version: "1.0.0",
     releaseDate: "Official Public Release 2026",
     fileSize: null, // Set to string e.g. "18.4 MB" only when verified; otherwise hidden
     compatibility: "Android 8.0 (API 26) or newer",
-    distributionNotice: "Official release distributed directly by ONEVO."
+    distributionNotice: "Official release distributed directly by ONEVO via GitHub Releases."
   };
 
   /* ==========================================================================
      2. DOWNLOAD BUTTON SYNCHRONIZATION
      ========================================================================== */
   function syncReleaseConfig() {
-    // Detect GitHub Pages subpath (e.g. https://username.github.io/repo-name/)
-    let downloadUrl = ONEVO_RELEASE_CONFIG.apkDownloadUrl;
-    if (window.location.hostname.includes('github.io')) {
-      const pathSegments = window.location.pathname.split('/').filter(Boolean);
-      if (pathSegments.length > 0 && !pathSegments[0].includes('.')) {
-        downloadUrl = '/' + pathSegments[0] + '/public/apk/release.apk';
-      } else {
-        downloadUrl = './public/apk/release.apk';
-      }
-    }
+    const downloadUrl = ONEVO_RELEASE_CONFIG.apkDownloadUrl;
 
     const downloadButtons = document.querySelectorAll('a.btn-download, a[data-download-apk]');
     downloadButtons.forEach(btn => {
