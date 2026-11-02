@@ -4,8 +4,6 @@
 
 The official public launch website for **ONEVO**, a modern Android digital identity and contact-sharing application.
 
-Designed with the visual language, neo-editorial typography, and tactile charm of **[Echo Music](https://echomusic.fun/)** while preserving the authentic core identity, features, and verified technical specifications of ONEVO.
-
 ---
 
 ## 1. GitHub Pages & Static Hosting Compatibility
