@@ -17,7 +17,7 @@
     tagline: "One profile. Endless connections.",
     apkDownloadUrl: "https://github.com/sonusapien/onevocontact/releases/download/v1.0.1/release.apk",
     apkFileName: "ONEVO.apk",
-    version: "1.0.0",
+    version: "1.0.1",
     releaseDate: "Official Public Release 2026",
     fileSize: null, // Set to string e.g. "18.4 MB" only when verified; otherwise hidden
     compatibility: "Android 8.0 (API 26) or newer",
