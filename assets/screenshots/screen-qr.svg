@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qr-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#0B0D12" />
+    </linearGradient>
+    <linearGradient id="qr-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79A9FF" />
+      <stop offset="100%" stop-color="#A7C5FF" />
+    </linearGradient>
+    <filter id="qr-shadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="380" height="780" rx="36" fill="url(#qr-bg)" />
+  <rect x="2" y="2" width="376" height="776" rx="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12" font-weight="600">9:41</text>
+  <circle cx="190" cy="24" r="5" fill="#05070B" />
+  <g transform="translate(315, 18)" fill="#F5F7FA">
+    <rect x="0" y="6" width="2.5" height="4" rx="0.5" />
+    <rect x="4" y="4" width="2.5" height="6" rx="0.5" />
+    <rect x="8" y="2" width="2.5" height="8" rx="0.5" />
+    <rect x="12" y="0" width="2.5" height="10" rx="0.5" />
+    <rect x="22" y="1" width="16" height="8.5" rx="2" fill="none" stroke="#F5F7FA" stroke-width="1.2" />
+    <rect x="24" y="3" width="11" height="4.5" rx="1" fill="#79A9FF" />
+    <rect x="38.5" y="3.5" width="1.5" height="3.5" rx="0.5" />
+  </g>
+
+  <!-- App Header -->
+  <g transform="translate(20, 52)">
+    <circle cx="14" cy="12" r="14" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <path d="M16 7 L11 12 L16 17" fill="none" stroke="#F5F7FA" stroke-width="1.6" stroke-linecap="round" />
+    <text x="40" y="17" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="18" font-weight="700">My QR Code</text>
+    <rect x="296" y="0" width="40" height="28" rx="14" fill="#171C27" stroke="rgba(255,255,255,0.1)" />
+    <text x="316" y="18" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Share</text>
+  </g>
+
+  <!-- Center White Card holding QR -->
+  <g transform="translate(26, 92)" filter="url(#qr-shadow)">
+    <rect width="328" height="428" rx="24" fill="#FFFFFF" />
+    
+    <!-- Profile header inside white card -->
+    <g transform="translate(24, 24)">
+      <!-- Avatar -->
+      <circle cx="28" cy="28" r="24" fill="#1A2030" stroke="#79A9FF" stroke-width="2" />
+      <text x="28" y="35" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="700" text-anchor="middle">PS</text>
+      <!-- Info -->
+      <text x="64" y="24" fill="#0E121B" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800">Priya Sharma</text>
+      <text x="64" y="40" fill="#5A6478" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">Product Designer · Studio One</text>
+      <circle cx="270" cy="28" r="4" fill="#2ECC71" />
+    </g>
+
+    <!-- Hairline divider -->
+    <line x1="24" y1="84" x2="304" y2="84" stroke="#ECEFF4" stroke-width="1" />
+
+    <!-- QR Code Graphic with ONEVO emblem in center -->
+    <g transform="translate(44, 102)">
+      <!-- QR Frame -->
+      <rect width="240" height="240" rx="16" fill="#F8FAFD" stroke="#E2E7F0" stroke-width="1" />
+      
+      <!-- Top-Left Corner Eye -->
+      <rect x="20" y="20" width="56" height="56" rx="10" fill="none" stroke="#0B0D12" stroke-width="7" />
+      <rect x="34" y="34" width="28" height="28" rx="6" fill="#0B0D12" />
+
+      <!-- Top-Right Corner Eye -->
+      <rect x="164" y="20" width="56" height="56" rx="10" fill="none" stroke="#0B0D12" stroke-width="7" />
+      <rect x="178" y="34" width="28" height="28" rx="6" fill="#0B0D12" />
+
+      <!-- Bottom-Left Corner Eye -->
+      <rect x="20" y="164" width="56" height="56" rx="10" fill="none" stroke="#0B0D12" stroke-width="7" />
+      <rect x="34" y="178" width="28" height="28" rx="6" fill="#0B0D12" />
+
+      <!-- High-tech QR matrix patterns -->
+      <!-- Top middle -->
+      <rect x="88" y="20" width="12" height="12" rx="2" fill="#0B0D12" />
+      <rect x="108" y="20" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="140" y="20" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="88" y="44" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="120" y="44" width="12" height="12" rx="2" fill="#0B0D12" />
+      <rect x="88" y="64" width="12" height="12" rx="2" fill="#0B0D12" />
+      <rect x="108" y="64" width="44" height="12" rx="2" fill="#0B0D12" />
+
+      <!-- Left middle -->
+      <rect x="20" y="88" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="44" y="88" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="20" y="120" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="52" y="120" width="24" height="24" rx="2" fill="#0B0D12" />
+      <rect x="20" y="140" width="12" height="12" rx="2" fill="#0B0D12" />
+
+      <!-- Right middle -->
+      <rect x="164" y="88" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="196" y="88" width="24" height="24" rx="2" fill="#0B0D12" />
+      <rect x="164" y="108" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="184" y="120" width="36" height="12" rx="2" fill="#0B0D12" />
+      <rect x="164" y="140" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="208" y="140" width="12" height="12" rx="2" fill="#0B0D12" />
+
+      <!-- Bottom middle & right -->
+      <rect x="88" y="164" width="36" height="12" rx="2" fill="#0B0D12" />
+      <rect x="132" y="164" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="152" y="164" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="184" y="164" width="36" height="24" rx="2" fill="#0B0D12" />
+      <rect x="88" y="184" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="108" y="196" width="36" height="12" rx="2" fill="#0B0D12" />
+      <rect x="152" y="184" width="24" height="12" rx="2" fill="#0B0D12" />
+      <rect x="184" y="196" width="12" height="24" rx="2" fill="#0B0D12" />
+      <rect x="204" y="204" width="16" height="16" rx="2" fill="#0B0D12" />
+
+      <!-- Center Logo Mask & Emblem -->
+      <rect x="88" y="88" width="64" height="64" rx="14" fill="#FFFFFF" stroke="#ECEFF4" stroke-width="2" />
+      <circle cx="120" cy="120" r="22" fill="#0B0D12" />
+      <!-- ONEVO Emblem in Center of QR -->
+      <circle cx="120" cy="112" r="5" fill="#79A9FF" />
+      <path d="M112 122 C108 122 105 125 105 128 C105 131 108 134 112 134 C116 134 118 131 120 130 C122 131 124 134 128 134 C132 134 135 131 135 128 C135 125 132 122 128 122 C124 122 122 125 120 126 C118 125 116 122 112 122 Z" fill="#79A9FF" />
+    </g>
+
+    <!-- Subtext below QR -->
+    <text x="164" y="364" fill="#0E121B" font-family="'Plus Jakarta Sans', sans-serif" font-size="12.5" font-weight="700" text-anchor="middle">Scan to view and save contact</text>
+    <rect x="44" y="380" width="240" height="26" rx="13" fill="#EEF4FF" />
+    <text x="164" y="397" fill="#2451B2" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">✓ Standard vCard 3.0 · Works with Google Lens</text>
+  </g>
+
+  <!-- Universal compatibility banner -->
+  <g transform="translate(26, 536)">
+    <rect width="328" height="50" rx="14" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <circle cx="28" cy="25" r="14" fill="#1A2438" />
+    <path d="M22 25 L26 29 L34 21" fill="none" stroke="#79A9FF" stroke-width="2" stroke-linecap="round" />
+    <text x="50" y="22" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">No App Required to Receive</text>
+    <text x="50" y="37" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Scannable by any phone camera or Google Lens</text>
+  </g>
+
+  <!-- Quick Action Buttons -->
+  <g transform="translate(26, 600)">
+    <!-- Save to Gallery -->
+    <rect x="0" y="0" width="156" height="42" rx="12" fill="#171C27" stroke="rgba(255,255,255,0.1)" />
+    <text x="78" y="26" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Save to Gallery</text>
+
+    <!-- Copy vCard -->
+    <rect x="172" y="0" width="156" height="42" rx="12" fill="#171C27" stroke="rgba(255,255,255,0.1)" />
+    <text x="250" y="26" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Copy vCard Contact</text>
+  </g>
+
+  <!-- Share Action Primary Button -->
+  <g transform="translate(26, 654)">
+    <rect width="328" height="44" rx="22" fill="url(#qr-accent)" filter="url(#qr-shadow)" />
+    <text x="164" y="27" fill="#0B0D12" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">Share QR Image / File</text>
+  </g>
+
+  <!-- Android System Navigation -->
+  <g transform="translate(0, 716)">
+    <line x1="0" y1="0" x2="380" y2="0" stroke="rgba(255,255,255,0.06)" />
+    <g transform="translate(48, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(136, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">People</text>
+    </g>
+    <g transform="translate(224, 16)">
+      <circle cx="10" cy="10" r="3.5" fill="#79A9FF" />
+      <text x="10" y="24" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" text-anchor="middle">My QR</text>
+    </g>
+    <g transform="translate(312, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Profile</text>
+    </g>
+    <rect x="150" y="48" width="80" height="3.5" rx="2" fill="rgba(255,255,255,0.3)" />
+  </g>
+</svg>

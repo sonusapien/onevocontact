@@ -1,0 +1,120 @@
+/* ==========================================================================
+   ONEVO CONTACT — MOTION & ANIMATION SYSTEM
+   Lightweight, performant CSS transitions and keyframes with accessibility.
+   ========================================================================== */
+
+/* 1. Scroll Reveal States */
+.reveal,
+.reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Stagger Delays */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }
+.delay-5 { transition-delay: 500ms; }
+
+/* 2. Floating Phone Mockup Animation */
+@keyframes floatMockup {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.4deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* 3. Laser Scanner Line Animation */
+@keyframes scanLaser {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(240px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.2;
+  }
+}
+
+.scan-laser-line {
+  animation: scanLaser 3.5s ease-in-out infinite;
+}
+
+/* 4. Radar Ripple Wave Animation */
+@keyframes radarWave {
+  0% {
+    r: 10;
+    opacity: 0.8;
+  }
+  100% {
+    r: 90;
+    opacity: 0;
+  }
+}
+
+/* 5. Fade In Transition for Tabs */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Reduced Motion Accessibility Override
+   Respects user preference for low-motion environments.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-up,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-phone-mockup {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .scan-laser-line {
+    animation: none !important;
+  }
+}

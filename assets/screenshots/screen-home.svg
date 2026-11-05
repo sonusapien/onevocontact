@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="h-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#0B0D12" />
+    </linearGradient>
+    <linearGradient id="h-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C2744" />
+      <stop offset="100%" stop-color="#121829" />
+    </linearGradient>
+    <linearGradient id="h-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79A9FF" />
+      <stop offset="100%" stop-color="#A7C5FF" />
+    </linearGradient>
+    <filter id="h-shadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="380" height="780" rx="36" fill="url(#h-bg)" />
+  <rect x="2" y="2" width="376" height="776" rx="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12" font-weight="600">9:41</text>
+  <circle cx="190" cy="24" r="5" fill="#05070B" />
+  <g transform="translate(315, 18)" fill="#F5F7FA">
+    <rect x="0" y="6" width="2.5" height="4" rx="0.5" />
+    <rect x="4" y="4" width="2.5" height="6" rx="0.5" />
+    <rect x="8" y="2" width="2.5" height="8" rx="0.5" />
+    <rect x="12" y="0" width="2.5" height="10" rx="0.5" />
+    <rect x="22" y="1" width="16" height="8.5" rx="2" fill="none" stroke="#F5F7FA" stroke-width="1.2" />
+    <rect x="24" y="3" width="11" height="4.5" rx="1" fill="#79A9FF" />
+    <rect x="38.5" y="3.5" width="1.5" height="3.5" rx="0.5" />
+  </g>
+
+  <!-- App Header -->
+  <g transform="translate(20, 50)">
+    <text x="0" y="20" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="22" font-weight="800">Hello, Priya! 👋</text>
+    <text x="0" y="38" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12.5">Connect · Share · Grow</text>
+    <!-- Settings icon -->
+    <rect x="300" y="4" width="36" height="36" rx="18" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <circle cx="318" cy="22" r="6" fill="none" stroke="#A0A8B7" stroke-width="1.8" />
+  </g>
+
+  <!-- Profile Summary Hero Card -->
+  <g transform="translate(20, 106)" filter="url(#h-shadow)">
+    <rect width="340" height="116" rx="18" fill="url(#h-hero)" stroke="rgba(121,169,255,0.25)" stroke-width="1" />
+    
+    <!-- Mini Avatar with initials -->
+    <circle cx="38" cy="38" r="22" fill="#293962" stroke="#79A9FF" stroke-width="1.8" />
+    <text x="38" y="45" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">PS</text>
+    <circle cx="53" cy="53" r="5" fill="#2ECC71" />
+
+    <text x="70" y="35" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700">Priya Sharma</text>
+    <text x="70" y="51" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Universal Profile Active</text>
+
+    <!-- Mini QR preview on right -->
+    <g transform="translate(264, 18)">
+      <rect width="60" height="60" rx="10" fill="#FFFFFF" />
+      <rect x="6" y="6" width="16" height="16" rx="3" fill="#0B0D12" />
+      <rect x="38" y="6" width="16" height="16" rx="3" fill="#0B0D12" />
+      <rect x="6" y="38" width="16" height="16" rx="3" fill="#0B0D12" />
+      <rect x="26" y="26" width="8" height="8" rx="1" fill="#79A9FF" />
+    </g>
+
+    <!-- Bottom Action Pill inside hero card -->
+    <rect x="16" y="76" width="308" height="28" rx="8" fill="#79A9FF" fill-opacity="0.15" />
+    <text x="170" y="95" fill="#A7C5FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Tap to open Fullscreen QR Code ↗</text>
+  </g>
+
+  <!-- Quick Actions Section Title -->
+  <g transform="translate(20, 246)">
+    <text x="4" y="0" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1">QUICK ACTIONS</text>
+  </g>
+
+  <!-- 2x2 Quick Actions Grid -->
+  <g transform="translate(20, 258)">
+    <!-- 1. Nearby Transfer -->
+    <g transform="translate(0, 0)">
+      <rect width="162" height="96" rx="16" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+      <circle cx="28" cy="30" r="16" fill="#1C2744" />
+      <!-- Radar icon -->
+      <path d="M24 34 A6 6 0 0 1 28 24 M21 37 A11 11 0 0 1 28 19 M18 40 A16 16 0 0 1 28 14" fill="none" stroke="#79A9FF" stroke-width="1.8" stroke-linecap="round" />
+      <circle cx="28" cy="34" r="2.5" fill="#79A9FF" />
+      <text x="16" y="68" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Nearby Transfer</text>
+      <text x="16" y="82" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Direct wireless sync</text>
+    </g>
+
+    <!-- 2. NameLink -->
+    <g transform="translate(178, 0)">
+      <rect width="162" height="96" rx="16" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+      <circle cx="28" cy="30" r="16" fill="#1C2744" />
+      <!-- Two phones icon -->
+      <rect x="20" y="22" width="10" height="16" rx="2" fill="none" stroke="#79A9FF" stroke-width="1.4" />
+      <rect x="26" y="24" width="10" height="16" rx="2" fill="none" stroke="#A7C5FF" stroke-width="1.4" />
+      <text x="16" y="68" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">NameLink</text>
+      <text x="16" y="82" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Mutual exchange</text>
+    </g>
+
+    <!-- 3. My QR -->
+    <g transform="translate(0, 110)">
+      <rect width="162" height="96" rx="16" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+      <circle cx="28" cy="30" r="16" fill="#1C2744" />
+      <!-- QR icon -->
+      <rect x="22" y="24" width="12" height="12" rx="2" fill="none" stroke="#79A9FF" stroke-width="1.6" />
+      <rect x="25" y="27" width="6" height="6" rx="1" fill="#79A9FF" />
+      <text x="16" y="68" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">My QR</text>
+      <text x="16" y="82" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Display vCard</text>
+    </g>
+
+    <!-- 4. Scan QR -->
+    <g transform="translate(178, 110)">
+      <rect width="162" height="96" rx="16" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+      <circle cx="28" cy="30" r="16" fill="#1C2744" />
+      <!-- Scanner reticle -->
+      <path d="M22 26 V23 H25 M31 23 H34 V26 M34 34 V37 H31 M25 37 H22 V34" fill="none" stroke="#79A9FF" stroke-width="1.8" stroke-linecap="round" />
+      <text x="16" y="68" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Scan QR</text>
+      <text x="16" y="82" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Camera &amp; gallery</text>
+    </g>
+  </g>
+
+  <!-- Recent Connections Section -->
+  <g transform="translate(20, 486)">
+    <text x="4" y="0" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1">RECENT CONNECTIONS</text>
+    <text x="336" y="0" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="end">See all (14)</text>
+
+    <!-- Item 1: Marcus Vance -->
+    <g transform="translate(0, 12)">
+      <rect width="340" height="54" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="28" cy="27" r="16" fill="#233250" />
+      <text x="28" y="32" fill="#A7C5FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" text-anchor="middle">MV</text>
+      <text x="56" y="24" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Marcus Vance</text>
+      <text x="56" y="39" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Engineering Lead · Today 3:15 PM</text>
+      <!-- Quick Call icon -->
+      <circle cx="312" cy="27" r="13" fill="#1B2234" />
+      <path d="M309 24 C309 24 309 27 312 30 C315 33 318 33 318 33 L316 31 L314.5 31.5 L313 30 L311.5 28.5 L312 27 Z" fill="#79A9FF" />
+    </g>
+
+    <!-- Item 2: Maya Patel -->
+    <g transform="translate(0, 74)">
+      <rect width="340" height="54" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="28" cy="27" r="16" fill="#3D2952" />
+      <text x="28" y="32" fill="#E8B4F8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" text-anchor="middle">MP</text>
+      <text x="56" y="24" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Maya Patel</text>
+      <text x="56" y="39" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">VP of Partnerships · Yesterday</text>
+      <circle cx="312" cy="27" r="13" fill="#1B2234" />
+      <path d="M309 24 C309 24 309 27 312 30 C315 33 318 33 318 33 L316 31 L314.5 31.5 L313 30 L311.5 28.5 L312 27 Z" fill="#79A9FF" />
+    </g>
+
+    <!-- Item 3: Lucas Zhao -->
+    <g transform="translate(0, 136)">
+      <rect width="340" height="54" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="28" cy="27" r="16" fill="#1C3834" />
+      <text x="28" y="32" fill="#8CE1D3" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" text-anchor="middle">LZ</text>
+      <text x="56" y="24" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">Lucas Zhao</text>
+      <text x="56" y="39" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Founder, Lattice · 3 days ago</text>
+      <circle cx="312" cy="27" r="13" fill="#1B2234" />
+      <path d="M309 24 C309 24 309 27 312 30 C315 33 318 33 318 33 L316 31 L314.5 31.5 L313 30 L311.5 28.5 L312 27 Z" fill="#79A9FF" />
+    </g>
+  </g>
+
+  <!-- Android System Navigation -->
+  <g transform="translate(0, 716)">
+    <line x1="0" y1="0" x2="380" y2="0" stroke="rgba(255,255,255,0.06)" />
+    <g transform="translate(48, 16)">
+      <circle cx="10" cy="10" r="3.5" fill="#79A9FF" />
+      <text x="10" y="24" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(136, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">People</text>
+    </g>
+    <g transform="translate(224, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Scan</text>
+    </g>
+    <g transform="translate(312, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Profile</text>
+    </g>
+    <rect x="150" y="48" width="80" height="3.5" rx="2" fill="rgba(255,255,255,0.3)" />
+  </g>
+</svg>

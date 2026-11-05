@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nl-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#0B0D12" />
+    </linearGradient>
+    <linearGradient id="nl-card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B253D" />
+      <stop offset="100%" stop-color="#121829" />
+    </linearGradient>
+    <linearGradient id="nl-card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182A2E" />
+      <stop offset="100%" stop-color="#0F1F24" />
+    </linearGradient>
+    <linearGradient id="nl-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79A9FF" />
+      <stop offset="100%" stop-color="#A7C5FF" />
+    </linearGradient>
+    <filter id="nl-shadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="380" height="780" rx="36" fill="url(#nl-bg)" />
+  <rect x="2" y="2" width="376" height="776" rx="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12" font-weight="600">9:41</text>
+  <circle cx="190" cy="24" r="5" fill="#05070B" />
+  <g transform="translate(315, 18)" fill="#F5F7FA">
+    <rect x="0" y="6" width="2.5" height="4" rx="0.5" />
+    <rect x="4" y="4" width="2.5" height="6" rx="0.5" />
+    <rect x="8" y="2" width="2.5" height="8" rx="0.5" />
+    <rect x="12" y="0" width="2.5" height="10" rx="0.5" />
+    <rect x="22" y="1" width="16" height="8.5" rx="2" fill="none" stroke="#F5F7FA" stroke-width="1.2" />
+    <rect x="24" y="3" width="11" height="4.5" rx="1" fill="#79A9FF" />
+    <rect x="38.5" y="3.5" width="1.5" height="3.5" rx="0.5" />
+  </g>
+
+  <!-- App Header -->
+  <g transform="translate(20, 52)">
+    <circle cx="14" cy="12" r="14" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <path d="M16 7 L11 12 L16 17" fill="none" stroke="#F5F7FA" stroke-width="1.6" stroke-linecap="round" />
+    <text x="40" y="17" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="18" font-weight="700">NameLink Exchange</text>
+    <rect x="270" y="0" width="66" height="26" rx="13" fill="#2ECC71" fill-opacity="0.15" />
+    <text x="303" y="17" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Connected</text>
+  </g>
+
+  <!-- Radar Discovery Indicator -->
+  <g transform="translate(190, 136)">
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#79A9FF" stroke-opacity="0.15" stroke-width="1" />
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#79A9FF" stroke-opacity="0.3" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="14" fill="#1C2744" stroke="#79A9FF" stroke-width="1.5" />
+    <!-- Two connecting dots -->
+    <circle cx="-6" cy="0" r="3" fill="#79A9FF" />
+    <circle cx="6" cy="0" r="3" fill="#A7C5FF" />
+    <line x1="-3" y1="0" x2="3" y2="0" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+
+  <text x="190" y="196" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Mutual Exchange Review</text>
+  <text x="190" y="214" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" text-anchor="middle">Both participants must approve before data transfers</text>
+
+  <!-- Card 1: Your Outgoing Card -->
+  <g transform="translate(20, 232)" filter="url(#nl-shadow)">
+    <rect width="340" height="126" rx="16" fill="url(#nl-card1)" stroke="rgba(121,169,255,0.3)" stroke-width="1" />
+    <rect x="14" y="12" width="108" height="20" rx="10" fill="#79A9FF" fill-opacity="0.15" />
+    <text x="68" y="26" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">YOUR OUTGOING CARD</text>
+
+    <!-- Check icon indicating your approval -->
+    <circle cx="316" cy="22" r="10" fill="#2ECC71" />
+    <path d="M312 22 L315 25 L320 19" fill="none" stroke="#0B0D12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <circle cx="36" cy="68" r="20" fill="#293962" stroke="#79A9FF" stroke-width="1.5" />
+    <text x="36" y="74" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">PS</text>
+    <text x="68" y="62" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" font-weight="700">Priya Sharma</text>
+    <text x="68" y="77" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Product Designer · Studio One</text>
+    <text x="68" y="92" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Sharing: Phone, Email, LinkedIn, Website</text>
+    
+    <rect x="14" y="100" width="312" height="18" rx="6" fill="#141926" />
+    <text x="170" y="113" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">✓ You approved this card exchange</text>
+  </g>
+
+  <!-- Exchange arrows indicator -->
+  <g transform="translate(190, 380)">
+    <circle cx="0" cy="0" r="16" fill="#141926" stroke="rgba(255,255,255,0.1)" />
+    <path d="M-5 -4 L0 -9 L5 -4 M0 -9 L0 9 M5 4 L0 9 L-5 4" fill="none" stroke="#79A9FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Card 2: Incoming Card -->
+  <g transform="translate(20, 412)" filter="url(#nl-shadow)">
+    <rect width="340" height="126" rx="16" fill="url(#nl-card2)" stroke="rgba(46,204,113,0.3)" stroke-width="1" />
+    <rect x="14" y="12" width="108" height="20" rx="10" fill="#2ECC71" fill-opacity="0.15" />
+    <text x="68" y="26" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">INCOMING CARD</text>
+
+    <!-- Verified peer badge -->
+    <circle cx="316" cy="22" r="10" fill="#2ECC71" />
+    <path d="M312 22 L315 25 L320 19" fill="none" stroke="#0B0D12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <circle cx="36" cy="68" r="20" fill="#1C3834" stroke="#2ECC71" stroke-width="1.5" />
+    <text x="36" y="74" fill="#8CE1D3" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">AC</text>
+    <text x="68" y="62" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" font-weight="700">Alex Chen</text>
+    <text x="68" y="77" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Frontend Architect · OpenSync</text>
+    <text x="68" y="92" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Includes: Phone, Work Email, GitHub, 𝕏</text>
+
+    <rect x="14" y="100" width="312" height="18" rx="6" fill="#141926" />
+    <text x="170" y="113" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" text-anchor="middle">✓ Alex Chen approved this card exchange</text>
+  </g>
+
+  <!-- Destination Choice Box -->
+  <g transform="translate(20, 560)">
+    <rect width="340" height="66" rx="14" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <text x="16" y="22" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700">SAVE DESTINATION</text>
+    <!-- Radio 1: Phone Contacts -->
+    <circle cx="24" cy="44" r="7" fill="none" stroke="#79A9FF" stroke-width="1.5" />
+    <circle cx="24" cy="44" r="3.5" fill="#79A9FF" />
+    <text x="38" y="48" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Save to Device Contacts</text>
+
+    <!-- Radio 2: ONEVO only -->
+    <circle cx="210" cy="44" r="7" fill="none" stroke="#A0A8B7" stroke-width="1.2" />
+    <text x="224" y="48" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">ONEVO Only</text>
+  </g>
+
+  <!-- Confirmation Buttons -->
+  <g transform="translate(20, 646)">
+    <!-- Cancel -->
+    <rect x="0" y="0" width="100" height="44" rx="22" fill="#171C27" stroke="rgba(255,255,255,0.1)" />
+    <text x="50" y="27" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Cancel</text>
+
+    <!-- Finalize Exchange -->
+    <rect x="112" y="0" width="228" height="44" rx="22" fill="url(#nl-accent)" filter="url(#nl-shadow)" />
+    <text x="226" y="27" fill="#0B0D12" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700" text-anchor="middle">Confirm &amp; Save Exchange</text>
+  </g>
+
+  <!-- Android System Navigation -->
+  <g transform="translate(0, 716)">
+    <line x1="0" y1="0" x2="380" y2="0" stroke="rgba(255,255,255,0.06)" />
+    <rect x="150" y="48" width="80" height="3.5" rx="2" fill="rgba(255,255,255,0.3)" />
+  </g>
+</svg>

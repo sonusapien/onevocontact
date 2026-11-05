@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="c-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#0B0D12" />
+    </linearGradient>
+    <filter id="c-shadow" x="-10%" y="-5%" width="120%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="380" height="780" rx="36" fill="url(#c-bg)" />
+  <rect x="2" y="2" width="376" height="776" rx="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+
+  <!-- Status Bar -->
+  <text x="28" y="28" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="12" font-weight="600">9:41</text>
+  <circle cx="190" cy="24" r="5" fill="#05070B" />
+  <g transform="translate(315, 18)" fill="#F5F7FA">
+    <rect x="0" y="6" width="2.5" height="4" rx="0.5" />
+    <rect x="4" y="4" width="2.5" height="6" rx="0.5" />
+    <rect x="8" y="2" width="2.5" height="8" rx="0.5" />
+    <rect x="12" y="0" width="2.5" height="10" rx="0.5" />
+    <rect x="22" y="1" width="16" height="8.5" rx="2" fill="none" stroke="#F5F7FA" stroke-width="1.2" />
+    <rect x="24" y="3" width="11" height="4.5" rx="1" fill="#79A9FF" />
+    <rect x="38.5" y="3.5" width="1.5" height="3.5" rx="0.5" />
+  </g>
+
+  <!-- App Header -->
+  <g transform="translate(20, 52)">
+    <text x="0" y="20" fill="#F5F7FA" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="20" font-weight="800">Connections</text>
+    <rect x="136" y="4" width="32" height="20" rx="10" fill="#1C2744" />
+    <text x="152" y="18" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" text-anchor="middle">38</text>
+    
+    <!-- Add Contact Manual button -->
+    <rect x="296" y="0" width="40" height="28" rx="14" fill="#79A9FF" />
+    <text x="316" y="18" fill="#0B0D12" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(20, 94)">
+    <rect width="340" height="42" rx="12" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <!-- Search Icon -->
+    <circle cx="24" cy="20" r="5" fill="none" stroke="#A0A8B7" stroke-width="1.5" />
+    <line x1="28" y1="24" x2="33" y2="29" stroke="#A0A8B7" stroke-width="1.5" stroke-linecap="round" />
+    <text x="44" y="26" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Search by name, company, role...</text>
+  </g>
+
+  <!-- Filter Chips -->
+  <g transform="translate(20, 148)">
+    <!-- All (Active) -->
+    <rect x="0" y="0" width="60" height="30" rx="15" fill="#79A9FF" />
+    <text x="30" y="19" fill="#0B0D12" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" text-anchor="middle">All (38)</text>
+
+    <!-- Recent -->
+    <rect x="70" y="0" width="76" height="30" rx="15" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <text x="108" y="19" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">Recent (8)</text>
+
+    <!-- Favorites -->
+    <rect x="156" y="0" width="90" height="30" rx="15" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <text x="201" y="19" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">★ Favorites (5)</text>
+
+    <!-- NameLink -->
+    <rect x="256" y="0" width="84" height="30" rx="15" fill="#141926" stroke="rgba(255,255,255,0.08)" />
+    <text x="298" y="19" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" text-anchor="middle">NameLink</text>
+  </g>
+
+  <!-- Connections List -->
+  <g transform="translate(20, 194)">
+    <!-- Item 1: Marcus Vance -->
+    <g transform="translate(0, 0)">
+      <rect width="340" height="72" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="32" cy="36" r="20" fill="#233250" />
+      <text x="32" y="42" fill="#A7C5FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MV</text>
+      <text x="64" y="30" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Marcus Vance</text>
+      <text x="64" y="46" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Engineering Lead · CloudScale</text>
+      <text x="64" y="60" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">via QR Scan · San Francisco</text>
+      
+      <!-- Actions -->
+      <circle cx="270" cy="36" r="14" fill="#1C2436" />
+      <path d="M267 33 C267 33 267 36 270 39 C273 42 276 42 276 42 L274 40 L272.5 40.5 L271 39 L269.5 37.5 L270 36 Z" fill="#79A9FF" />
+
+      <circle cx="308" cy="36" r="14" fill="#1C2436" />
+      <rect x="303" y="32" width="10" height="8" rx="1" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+      <path d="M303 33 L308 36 L313 33" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+    </g>
+
+    <!-- Item 2: Maya Patel -->
+    <g transform="translate(0, 82)">
+      <rect width="340" height="72" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="32" cy="36" r="20" fill="#3D2952" />
+      <text x="32" y="42" fill="#E8B4F8" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MP</text>
+      <text x="64" y="30" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Maya Patel ★</text>
+      <text x="64" y="46" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">VP Strategic Partnerships · Apex</text>
+      <text x="64" y="60" fill="#2ECC71" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">via NameLink Exchange · New York</text>
+      
+      <circle cx="270" cy="36" r="14" fill="#1C2436" />
+      <path d="M267 33 C267 33 267 36 270 39 C273 42 276 42 276 42 L274 40 L272.5 40.5 L271 39 L269.5 37.5 L270 36 Z" fill="#79A9FF" />
+
+      <circle cx="308" cy="36" r="14" fill="#1C2436" />
+      <rect x="303" y="32" width="10" height="8" rx="1" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+      <path d="M303 33 L308 36 L313 33" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+    </g>
+
+    <!-- Item 3: Lucas Zhao -->
+    <g transform="translate(0, 164)">
+      <rect width="340" height="72" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="32" cy="36" r="20" fill="#1C3834" />
+      <text x="32" y="42" fill="#8CE1D3" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">LZ</text>
+      <text x="64" y="30" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Lucas Zhao</text>
+      <text x="64" y="46" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Founder &amp; CEO · Lattice Systems</text>
+      <text x="64" y="60" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">via Nearby Wireless · Austin</text>
+      
+      <circle cx="270" cy="36" r="14" fill="#1C2436" />
+      <path d="M267 33 C267 33 267 36 270 39 C273 42 276 42 276 42 L274 40 L272.5 40.5 L271 39 L269.5 37.5 L270 36 Z" fill="#79A9FF" />
+
+      <circle cx="308" cy="36" r="14" fill="#1C2436" />
+      <rect x="303" y="32" width="10" height="8" rx="1" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+      <path d="M303 33 L308 36 L313 33" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+    </g>
+
+    <!-- Item 4: Sarah Jenkins -->
+    <g transform="translate(0, 246)">
+      <rect width="340" height="72" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="32" cy="36" r="20" fill="#3D321F" />
+      <text x="32" y="42" fill="#FAD089" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">SJ</text>
+      <text x="64" y="30" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Sarah Jenkins ★</text>
+      <text x="64" y="46" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Design Director · Studio Helix</text>
+      <text x="64" y="60" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">via QR Scan · London</text>
+      
+      <circle cx="270" cy="36" r="14" fill="#1C2436" />
+      <path d="M267 33 C267 33 267 36 270 39 C273 42 276 42 276 42 L274 40 L272.5 40.5 L271 39 L269.5 37.5 L270 36 Z" fill="#79A9FF" />
+
+      <circle cx="308" cy="36" r="14" fill="#1C2436" />
+      <rect x="303" y="32" width="10" height="8" rx="1" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+      <path d="M303 33 L308 36 L313 33" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+    </g>
+
+    <!-- Item 5: David Kim -->
+    <g transform="translate(0, 328)">
+      <rect width="340" height="72" rx="14" fill="#141926" stroke="rgba(255,255,255,0.06)" />
+      <circle cx="32" cy="36" r="20" fill="#2D2144" />
+      <text x="32" y="42" fill="#C5A6FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" text-anchor="middle">DK</text>
+      <text x="64" y="30" fill="#F5F7FA" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">David Kim</text>
+      <text x="64" y="46" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Product Manager · Vector</text>
+      <text x="64" y="60" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">via QR Scan · Seattle</text>
+      
+      <circle cx="270" cy="36" r="14" fill="#1C2436" />
+      <path d="M267 33 C267 33 267 36 270 39 C273 42 276 42 276 42 L274 40 L272.5 40.5 L271 39 L269.5 37.5 L270 36 Z" fill="#79A9FF" />
+
+      <circle cx="308" cy="36" r="14" fill="#1C2436" />
+      <rect x="303" y="32" width="10" height="8" rx="1" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+      <path d="M303 33 L308 36 L313 33" fill="none" stroke="#79A9FF" stroke-width="1.2" />
+    </g>
+  </g>
+
+  <!-- Android System Navigation -->
+  <g transform="translate(0, 716)">
+    <line x1="0" y1="0" x2="380" y2="0" stroke="rgba(255,255,255,0.06)" />
+    <g transform="translate(48, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(136, 16)">
+      <circle cx="10" cy="10" r="3.5" fill="#79A9FF" />
+      <text x="10" y="24" fill="#79A9FF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" text-anchor="middle">People</text>
+    </g>
+    <g transform="translate(224, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Scan</text>
+    </g>
+    <g transform="translate(312, 16)">
+      <circle cx="10" cy="10" r="2.5" fill="#A0A8B7" />
+      <text x="10" y="24" fill="#A0A8B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Profile</text>
+    </g>
+    <rect x="150" y="48" width="80" height="3.5" rx="2" fill="rgba(255,255,255,0.3)" />
+  </g>
+</svg>
